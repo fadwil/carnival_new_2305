@@ -11,4 +11,12 @@ class Visitor
   def add_preference(preference)
     @preferences << preference
   end
+
+  def tall_enough?(threshold)
+    if @height >= threshold
+      true
+    else
+      false
+    end
+  end
 end
