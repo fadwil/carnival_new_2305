@@ -17,4 +17,10 @@ class Carnival
       ride.total_revenue
     end
   end
+
+  def total_revenue
+    rides.sum do |ride|
+      ride.total_revenue
+    end
+  end
 end
