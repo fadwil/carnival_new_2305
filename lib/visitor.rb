@@ -7,4 +7,8 @@ class Visitor
     @spending_money = spending_money.gsub(/[^\d.]/, '').to_i
     @preferences = []
   end
+
+  def add_preference(preference)
+    @preferences << preference
+  end
 end
