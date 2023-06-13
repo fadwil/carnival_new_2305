@@ -12,5 +12,6 @@ class Ride
   def board_rider(visitor)
     @rider_log[visitor] = 0 unless @rider_log.key?(visitor)
     @rider_log[visitor] += 1
+    visitor.spending_money -= @admission_fee
   end
 end
